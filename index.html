@@ -3,22 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <title>잔재미코딩</title>
-    #웹사이트에 대한 서명
+    <!-- 웹사이트에 대한 서명 -->
     <meta name="description" content="잔재미코딩 온라인 강의 리스트" />
-    #검색엔진에 어떤 키워드로 웹사이트가 노출될지 알려주는 것 (물론 오직
-    이것만으로 검색엔진에 노출되는 것은 아님)
+    <!-- 검색엔진에 어떤 키워드로 웹사이트가 노출될지 알려주는 것 (물론 오직 이것만으로 검색엔진에 노출되는 것은 아님) -->
     <meta name="keywords" content="Online Lecture" />
     <meta name="author" content="Dava Lee" />
-    #각각의 device마다 알맞은 해상도 정보를 주는 것(device-width), height은
+    <!-- 각각의 device마다 알맞은 해상도 정보를 주는 것(device-width), height은
     상관없음 #확대/축소 하는 경우, 해상도가 깨질 수 있기 때문에 이를 못하도록
-    하는 것이 일반적 (1.0 == 100%)
+    하는 것이 일반적 (1.0 == 100%) -->
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    # Internet Explorer가 화면 엔진을 다르게 사용하는 경우가 있어서, 최신 것을
-    쓰라고 정해주는 것
+    <!-- Internet Explorer가 화면 엔진을 다르게 사용하는 경우가 있어서, 최신 것을
+    쓰라고 정해주는 것 -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="잔재미코딩 온라인 강의 사이트입니다." />
+    <meta
+      property="og:description"
+      content="잔재미코딩 온라인 강의 리스트를 공유하는 웹페이지입니다."
+    />
+    <meta property="og:image" content="img/fun-coding-mark.png" />
+    <meta property="og:url" content="https://www.fun-coding.org" />
+
+    <!-- twitter card (Twitter) 트위터는 별도의 format을 씀-->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="잔재미코딩 온라인 강의 리스트를 공유하는 웹페이지입니다."
+    />
+    <meta name="twitter:description" content="잔재미코딩" />
+    <meta name="twitter:image" content="img/fun-coding-mark.png" />
+    <meta name="twitter:url" content="https://www.fun-coding.org" />
+    <meta name="twitter:creator" content="Dave Lee" />
+    <!-- png는 사이즈가 정해져있는반면, ico는 상황에 맞게 적절한 사이즈를 적용 가능 -->
+    <link rel="icon" href="fun-coding.ico" />
+
+    <!-- 아이폰용 favicon -->
+    <link rel="apple-touch-icon" href="fun-coding.ico" />
+    <!-- 인터넷 익스플로러용 favicon -->
+    <link rel="short icon" type="image/x-icon" href="fun-coding.ico" />
+
+    <!-- CSS RESET, CSS 관련 link중에서는 최상단에 적어주어야 아래 Font랑 Style이 초기화가 안됨-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- Font -->
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="inner">
+        <div class="head-container">
+          <div class="head-brand">
+            <a href="https://www.fun-coding.org"> 잔재미코딩</a>
+          </div>
+          <div class="head-blog">
+            <a href="https://www.fun-coding.org/daveblog.html">
+              잔재미코딩 블로그 모음</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="main-container">
+        <div class="inner">
+          <div class="title-container">
+            <div class="title">광고보다 강의에 집중합니다</div>
+            <div class="message">
+              전자책보다 좋은 자료와 현업의 경험을 함께
+              <br />
+              검증된 온라인 강의를<br />
+              검증된 온라인 플랫폼에서 제공합니다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+    <!-- <script src="js/main.js"></script> -->
+  </body>
 </html>
